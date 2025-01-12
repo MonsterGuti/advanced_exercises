@@ -1,0 +1,11 @@
+text = input("Enter the text: ")
+
+text_lower = text.lower()
+
+words_to_count = ["sand", "water", "fish", "sun"]
+
+total_count = 0
+for word in words_to_count:
+    total_count += text_lower.count(word)
+
+print(f"The total count of 'Sand', 'Water', 'Fish', and 'Sun' is: {total_count}")
