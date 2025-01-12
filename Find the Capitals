@@ -1,0 +1,7 @@
+word = input()
+lower_word = word.lower()
+my_list = []
+for char in range(len(word)):
+    if word[char] != lower_word[char]:
+        my_list.append(char)
+print(my_list)
