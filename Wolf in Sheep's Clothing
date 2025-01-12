@@ -1,0 +1,11 @@
+herd = input()
+
+animals = herd.split(", ")
+
+wolf_index = animals.index("wolf")
+
+if wolf_index == len(animals) - 1:
+    print("Please go away and stop eating my sheep")
+else:
+    sheep_position = len(animals) - wolf_index - 1
+    print(f"Oi! Sheep number {sheep_position}! You are about to be eaten by a wolf!")
